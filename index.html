@@ -1,22 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Aaron G Studios</title>
+    <meta charset="UTF-8">
+    <title>Aaron G Studios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* Light text for dark background */
+            color: #eeeeee;
+            line-height: 1.6;
+            margin: 40px;
+            /* Dark gray background */
+            background-color: #333333;
+        }
+        /* Menu Styling */
+        table.nav {
+            width: 100%;
+            border-bottom: 1px solid #666666;
+            margin-bottom: 30px;
+        }
+        table.nav th {
+            padding: 10px;
+            text-align: center;
+        }
+        table.nav a {
+            text-decoration: none;
+            /* Brighter blue for contrast */
+            color: #4da6ff;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        /* Content Styling */
+        h1 {
+            font-size: 28px;
+            color: #ffffff;
+        }
+        .subheader {
+            font-size: 18px;
+            color: #cccccc;
+        }
+        /* Image Table Styling */
+        table.gallery {
+            width: 100%;
+            margin-top: 20px;
+        }
+        table.gallery td {
+            padding: 15px;
+            vertical-align: top;
+            width: 50%;
+        }
+
+        /* Method 1: The Cleaner CSS Class Approach */
+        .square-720 {
+            width: 720px;
+            height: 720px;
+            display: block;
+            margin: 0 auto; /* Centers the image in the cell */
+            object-fit: cover; /* Ensures non-square images don't stretch */
+        }
+    </style>
 </head>
 <body>
 
-<table>
-  <tr>
-    <th><a href="index.html">HOME</a></p></th>
-    <th><a href="photo.html">PHOTOGRAPHY</a></p></th>
-    <th><a href="design.html">DESIGN</a></p></th>
-    <th><a href="about.html">ABOUT</a></p></th>
-  </tr>
- 
-</table>
+    <table class="nav">
+        <tr>
+            <th><a href="index.html">Home</a></th>
+            <th><a href="photo.html">Photography</a></th>
+            <th><a href="design.html">Design</a></th>
+            <th><a href="about.html">About</a></th>
+        </tr>
+    </table>
 
-<h1>Aaron Gonzalez</h1>
-<p>Photographer and designer</p>
-<img src="staticver.jpg" alt="Aaron G" width="260" height="260">
+    <h1>Aaron Gonzalez</h1>
+    <p class="subheader">Photographer and Designer</p>
+
+    <table class="gallery">
+        <tr>
+            <td>
+                <img src="deathconscious.png" alt="Deathconsciousness" width="100%">
+                <p><small>This was made with specifically using darker tones and an almost monochromatic color palette of grays and muted greens in mind to all blend together. There a focus placed on the man in the middle as everything goes around him in a sort of swing movement. Deathconsciousness is an album about a hyper awareness of death which is a theme all these medias portray.</small></p>
+            </td>
+            <td>
+                <img src="staticvergil.jpg" alt="Work Sample 2" class="square-720">
+                <p><small>An old conceptual piece for a story I'd written. The story has a large focus on reds, yellows, and brutalist architecture, thus the soviet-era building primarily focused on.</small></p>
+            </td>
+        </tr>
+    </table>
+
 </body>
 </html>

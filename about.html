@@ -1,22 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Aaron G Studios</title>
+    <meta charset="UTF-8">
+    <title>Aaron G Studios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #eeeeee; /* Lightened slightly for readability on dark gray */
+            line-height: 1.6;
+            margin: 40px;
+            /* Darker gray background */
+            background-color: #333333;
+        }
+        /* Menu Styling */
+        table.nav {
+            width: 100%;
+            border-bottom: 1px solid #666666;
+            margin-bottom: 30px;
+        }
+        table.nav th {
+            padding: 10px;
+            text-align: center;
+        }
+        table.nav a {
+            text-decoration: none;
+            color: #4da6ff; 
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        /* Content Styling */
+        h1 {
+            font-size: 28px;
+            color: #ffffff;
+        }
+        .subheader {
+            font-size: 18px;
+            color: #cccccc;
+        }
+        /* Image Table Styling */
+        table.gallery {
+            width: 100%;
+            margin-top: 20px;
+        }
+        table.gallery td {
+            padding: 15px;
+            vertical-align: top;
+            width: 50%;
+        }
+    </style>
 </head>
 <body>
 
-<table>
-  <tr>
-    <th><a href="index.html">HOME</a></p></th>
-    <th><a href="photo.html">PHOTOGRAPHY</a></p></th>
-    <th><a href="design.html">DESIGN</a></p></th>
-    <th><a href="about.html">ABOUT</a></p></th>
-  </tr>
- 
-</table>
+    <table class="nav">
+        <tr>
+            <th><a href="index.html">Home</a></th>
+            <th><a href="photo.html">Photography</a></th>
+            <th><a href="design.html">Design</a></th>
+            <th><a href="about.html">About</a></th>
+        </tr>
+    </table>
 
-<h1>Aaron Gonzalez</h1>
-<p>Photographer and designer</p>
-<img src="staticver.jpg" alt="Aaron G" width="260" height="260">
+    <h1>Aaron Gonzalez</h1>
+    <p class="subheader">Photographer and Designer</p>
+
+    <table class="gallery">
+        <tr>
+            <td>
+                <img src="staticver.jpg" width="400" height="auto" alt="Project One">
+                <p><small></small></p>
+                
+                <img src="meagain.png" width="400" height="auto" alt="Project Two">
+                <p><small></small></p>
+            </td>
+        </tr>
+    </table>
+
 </body>
 </html>
